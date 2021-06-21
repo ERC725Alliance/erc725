@@ -22,7 +22,7 @@ import "solidity-bytes-utils/contracts/BytesLib.sol";
  *
  *  @author Fabian Vogelsteller <fabian@lukso.network>
  */
-contract ERC725X is ERC165Storage, Ownable, IERC725X  {
+contract ERC725X is Ownable, ERC165Storage, IERC725X  {
 
     bytes4 internal constant _INTERFACE_ID_ERC725X = 0x44c028fe;
 
