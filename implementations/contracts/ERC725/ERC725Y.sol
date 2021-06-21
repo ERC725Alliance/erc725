@@ -18,7 +18,7 @@ import "@openzeppelin/contracts/utils/introspection/ERC165Storage.sol";
  *
  *  @author Fabian Vogelsteller <fabian@lukso.network>
  */
-contract ERC725Y is ERC165Storage, Ownable, IERC725Y {
+contract ERC725Y is Ownable, ERC165Storage, IERC725Y {
 
     bytes4 internal constant _INTERFACE_ID_ERC725Y = 0x2bd57b73;
 
